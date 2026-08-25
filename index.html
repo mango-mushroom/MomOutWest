@@ -80,6 +80,9 @@
   .stat .n{font-family:'Fraunces',Georgia,serif;font-size:28px;font-weight:600;color:var(--green);font-variant-numeric:tabular-nums}
   .stat .l{font-size:10.5px;color:var(--ink2);margin-top:4px;text-transform:uppercase;letter-spacing:.14em;font-weight:700}
   .secthead{margin:26px 16px 4px;font-family:'Fraunces',Georgia,serif;color:var(--green);font-size:21px;font-weight:600;letter-spacing:.01em}
+  .conf{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-weight:700;font-size:14.5px;background:var(--green-soft);color:var(--green);padding:3px 10px;border-radius:8px;letter-spacing:.08em;white-space:nowrap}
+  .day a{color:var(--green);font-weight:600;text-decoration:none;border-bottom:1px solid #c9dbd1}
+  .warn{display:inline-block;background:#f9e8df;color:#a03e14;font-size:11px;font-weight:700;border-radius:999px;padding:3px 10px;margin-left:6px;vertical-align:middle;letter-spacing:.05em;text-transform:uppercase}
   .maplabel{background:rgba(255,255,255,.94);border:0;border-radius:6px;box-shadow:0 1px 3px rgba(60,64,67,.35);padding:2px 6px;font-family:inherit;font-size:11px;line-height:1.25;color:#26221c;white-space:nowrap}
   .maplabel b{font-size:11.5px}
   .maplabel .sub{color:#7a7161;font-size:10px}
@@ -102,6 +105,7 @@
     <a href="#tab-itin">Route</a>
     <a href="#tab-map">Map</a>
     <a href="#tab-budget">Budget</a>
+    <a href="#tab-book">Bookings</a>
   </nav>
 </div>
 <header>
@@ -219,6 +223,68 @@
     <tr class="total"><td>Total (lean plan, net of credits)</td><td class="amt">$2,388</td></tr>
   </table>
   <div class="note">Lean plan: budget motel in Kanab, Denver hotel near Union Station, Sunday Vegas night (cheaper than Saturday). Meals excluded; André’s LAS→SFO flight was $1.40 cash after $101 in credits. Green = booked or quoted; gold = estimate.</div>
+</section>
+
+<!-- BOOKINGS -->
+<section id="tab-book" class="tab">
+  <h2 class="secthead">Bookings</h2>
+  <div class="note" style="margin-top:10px">Every confirmation number for the trip, in travel order. Tap a phone number to call.</div>
+
+  <div class="day"><h2><span>Mom's flight to Denver<span class="date">Tue Sep 8 · Southwest WN 3297</span></span></h2>
+    <ul>
+      <li>Confirmation <span class="conf">AERBIU</span></li>
+      <li>PIT 6:30 PM → DEN 7:55 PM · Seat 23A · Choice fare</li>
+      <li>$316.40 paid, $135.55 flight credit applied · Southwest <a href="tel:18004359792">1-800-435-9792</a></li>
+    </ul></div>
+
+  <div class="day"><h2><span>Denver hotel<span class="date">Tue Sep 8 · Hilton Garden Inn Denver Union Station</span></span></h2>
+    <ul>
+      <li>Confirmation <span class="conf">3526595861</span></li>
+      <li>1999 Chestnut Place, Denver · check-in 3:00 PM, check-out noon</li>
+      <li>Room, 2 queens, panoramic view · $210.63 paid (Visa 5212)</li>
+      <li>Booked via Expedia, itinerary 73528873298884 · <a href="tel:18662303837">1-866-230-3837</a> · free cancel until Sep 6, 11:59 PM</li>
+    </ul></div>
+
+  <div class="day"><h2><span>Amtrak California Zephyr<span class="date">Wed Sep 9 · Train #5, Denver → Provo</span></span></h2>
+    <ul>
+      <li>Reservation <span class="conf">CF26C9</span></li>
+      <li>Denver Union Station 8:46 AM → Provo 10:02 PM · 2 coach seats · $286.90 paid</li>
+      <li>Amtrak <a href="tel:18008727245">1-800-USA-RAIL</a></li>
+    </ul></div>
+
+  <div class="day"><h2><span>Rental car<span class="date">Thu Sep 10 – Sun Sep 13 · Enterprise</span></span></h2>
+    <ul>
+      <li>Nissan Rogue or similar (midsize SUV) · unlimited miles · $267.00 due at pickup</li>
+      <li>Pick up: 485 S University Ave, Provo · Thu 10:00 AM</li>
+      <li>Return: Paris Las Vegas, 3655 S Las Vegas Blvd · Sun 10:00 AM</li>
+      <li>Reservation number is in the Enterprise confirmation email · Enterprise <a href="tel:18557362886">1-855-736-2886</a></li>
+    </ul></div>
+
+  <div class="day"><h2><span>Kanab hotel · 3 nights<span class="date">Thu Sep 10 – Sun Sep 13 · La Quinta Inn &amp; Suites Kanab</span></span></h2>
+    <ul>
+      <li>Confirmation <span class="conf">1044091602</span></li>
+      <li>Check-in after 3:00 PM · $390.57 paid</li>
+      <li>Booked via Priceline, trip 143-379-276-27</li>
+    </ul></div>
+
+  <div class="day"><h2><span>Las Vegas hotel<span class="date">Sun Sep 13 · Paris Las Vegas</span></span></h2>
+    <ul>
+      <li>Confirmation <span class="conf">MSL5K</span> <span class="warn">Sun night only</span></li>
+      <li>Bordeaux room, Eiffel view, 2 queens · check-in 4:00 PM · $241.90 paid</li>
+      <li>3655 S Las Vegas Blvd · still to do: add Monday night · Caesars <a href="tel:18665035494">1-866-503-5494</a></li>
+    </ul></div>
+
+  <div class="day"><h2><span>Mom's flight home<span class="date">Tue Sep 15 · Southwest WN 421</span></span></h2>
+    <ul>
+      <li>Confirmation <span class="conf">CP5V93</span></li>
+      <li>LAS 1:30 PM → PIT 8:55 PM nonstop · seat assigned at check-in · $156.15 paid</li>
+    </ul></div>
+
+  <div class="day"><h2><span>André's flight home<span class="date">Tue Sep 15 · Southwest WN 4512</span></span></h2>
+    <ul>
+      <li>Confirmation <span class="conf">A4ZRHA</span></li>
+      <li>LAS 2:25 PM → SFO 4:00 PM · seat assigned at check-in · $102.40 ($101 in credits)</li>
+    </ul></div>
 </section>
 </div>
 
